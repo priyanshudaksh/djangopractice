@@ -27,3 +27,6 @@ def show_user(request):
 def form_handle(request):
     form = NameForm(request.POST)
     return render(request, 'name.html', {'form': form})
+
+def register_page(request):
+    return render(request, "Register.html", {})

@@ -8,4 +8,5 @@ urlpatterns = [
     path('handle', views.handle, name="handle"),
     path('user', views.show_user, name="show user"),
     path('form', views.form_handle, name="form"),
+    path('Register', views.register_page, name="register"),
 ]
