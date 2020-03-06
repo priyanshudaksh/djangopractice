@@ -6,10 +6,6 @@ from django.contrib.auth import logout
 from . import models
 from .forms import NameForm
 from .models import User
-from django.contrib import auth
-import sys
-sys.setrecursionlimit(1500)
-
 
 def hello_world(request):
     return render(request, 'index.html', {})
@@ -75,6 +71,6 @@ def register_user(request):
     return response
 
 def logout_handle(request):
-    auth.logout(request)
+    logout(request)
     response = redirect('/logout_function')
     return response
