@@ -10,4 +10,6 @@ urlpatterns = [
     path('form', views.form_handle, name="form"),
     path('Register', views.register_page, name="register"),
     path('register_user', views.register_user, name="register_user"),
+    path('logout', views.logout_handle, name="logout"),
+    path('logout_function', views.hello_world, name="logouted"),
 ]

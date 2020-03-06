@@ -2,9 +2,13 @@ from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import Http404
 from django.shortcuts import get_object_or_404, render, redirect
+from django.contrib.auth import logout
 from . import models
 from .forms import NameForm
 from .models import User
+from django.contrib import auth
+import sys
+sys.setrecursionlimit(1500)
 
 
 def hello_world(request):
@@ -68,4 +72,9 @@ def register_user(request):
     u1.save()
     # return render(request, "index.html", {})
     response = redirect('/')
+    return response
+
+def logout_handle(request):
+    auth.logout(request)
+    response = redirect('/logout_function')
     return response

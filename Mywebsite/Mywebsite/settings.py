@@ -25,7 +25,7 @@ SECRET_KEY = 'w2fjcnu(nk-abjxa-qg+ycdact%m=!kse5*o$@qp+-28!9&_ci'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["daksh.run-ap-south1.goorm.io", "127.0.0.1", "192.168.0.106"]
+ALLOWED_HOSTS = ["daksh.run-ap-south1.goorm.io", "127.0.0.1", "192.168.0.106", 'dakshadjango.run-ap-south1.goorm.io']
 
 
 # Application definition
