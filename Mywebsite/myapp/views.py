@@ -7,6 +7,7 @@ from . import models
 from .forms import NameForm
 from .models import User
 
+
 def hello_world(request):
     return render(request, 'index.html', {})
 
@@ -32,7 +33,7 @@ def handle(request):
         # user = get_object_or_404(models.User, email=username, password=password)
         obj = User.objects.get(email=username, password=password)
     except User.DoesNotExist:
-        #raise Http404("No MyModel matches the given query.")
+        # raise Http404("No MyModel matches the given query.")
         response = redirect('/')
         return response
     '''if obj is None:
@@ -70,7 +71,7 @@ def register_user(request):
     response = redirect('/')
     return response
 
+
 def logout_handle(request):
     logout(request)
-    response = redirect('/logout_function')
-    return response
+    return render(request, "logout.html", {})
