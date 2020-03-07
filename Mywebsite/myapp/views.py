@@ -77,4 +77,4 @@ def logout_handle(request):
     return render(request, "logout.html", {})
 
 def enter_data_daily(request):
-    time = 
+    time = request.POST.get()
