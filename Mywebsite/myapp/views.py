@@ -75,3 +75,6 @@ def register_user(request):
 def logout_handle(request):
     logout(request)
     return render(request, "logout.html", {})
+
+def enter_data_daily(request):
+    time = 

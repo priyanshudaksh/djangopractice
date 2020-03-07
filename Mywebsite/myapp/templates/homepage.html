@@ -32,7 +32,6 @@
 				</div>
 				<div class="nav-left">
 					<a href="#home"><span class="ion-ios-home-outline"></span> Home</a>
-					<a href="#alarm"><span class="ion-ios-list-outline"></span> Alarm</a>
 					<a href="#compose"><span class="ion-ios-compose-outline"></span> Compose</a>
 					<a href="#chats"><span class="ion-ios-chatboxes-outline"></span> Chats</a>
 					<a href="#profile"><span class="ion-ios-person-outline"></span> Profile</a>
@@ -52,6 +51,10 @@
 					<div class="date lightSpeedIn animated">June 18, 2015</div>
 					<div class="time lightSpeedIn animated">08:00 AM</div>
 				</div>
+                <div class="temperature pull-right bounceInRight animated">
+						<div class="unit"><span class="ion-ios-sunny-outline"></span> 34<i>&deg;</i></div>
+						<div class="location">Chennai, India</div>
+					</div>
 			</div>
 			<div class="html alarm">
 				<div class="forecast clearfix">
@@ -61,7 +64,7 @@
 					</div>
 					<div class="temperature pull-right bounceInRight animated">
 						<div class="unit"><span class="ion-ios-sunny-outline"></span> 34<i>&deg;</i></div>
-						<div class="location">Kathmandu, Nepal</div>
+						<div class="location">Chennai, India</div>
 					</div>
 				</div>
 				<div class="alarm-list">
@@ -102,7 +105,8 @@
 				</div>
 			</div>
 			<div class="html compose">
-				<div class="forms">
+				<div class="forms" action="/details">
+                    <form action="/details">
 					<div class="group clearfix slideInRight animated">
 						<label class="pull-left" for="compose-time"><span class="ion-ios-time-outline"></span> Time</label>
 						<input class="pull-right" id="compose-time" type="time">
@@ -122,7 +126,9 @@
 					<div class="action flipInY animated">
 						<button class="btn">Compose</button>
 					</div>
+                    </form>
 				</div>
+
 			</div>
 			<div class="html chats">
 				<div class="tabs-list clearfix">
